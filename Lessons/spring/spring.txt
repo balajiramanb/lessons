@@ -1,0 +1,117 @@
+
+ioc container job :
+=================
+find bean
+wire dependency
+manage lifecycle of the bean
+
+
+
+
+@commonentscane- search for component , give the package 
+@component - spring responsible to create bean 
+@springbootapplication &springboottest for component scan 
+@controller controller 
+@respository data layer dao 
+@service business service facade 
+
+how spirng singleton differnt from gang of four singleton
+gang of four single is 1 per class loader
+spring one instance per container <>
+
+nosuchbeandefinition exception (because @component is missing or mismatch package for componentscan
+nouniquebeandefination exception - fix it by nametype or @qualifier or @primary
+
+
+JEE dependency inject -support jee standard 
+sprin
+@inject , @named, @singleton
+
+spring 2.5 ->anonation .
+spring 3-> usage of java 5 feautures 
+spring 4 - support jdk 8,@rent controller added . minimum java se 6 required 
+spring 4.1-support jcahce anonation 
+spring 5 -> functinal web framework, java modularity ,reactive programing ,kotlin support 
+
+spring modules
+================
+corecontainer: bean,core,context , spel ( spring excepretion lauguage)
+data access : jdbc ,orm,oxm (object xml mapping ) jaxb and jms
+web : websocket ,servlet ,web
+aop : corss cutting concerns (accross modules )
+aspectj:
+spring test 
+
+spring projects :
+spring boot , spring cloud,spring data ,integratoin ,security ,batch
+
+
+build of mattieral (bom)
+design patter 
+front controller pattern 
+prototype 
+di 
+factory pattern
+template method 
+
+
+mvc
+@requestmapping used to map url and request method (get,post etc)
+dispatcherservelt to controller ->return name of the jsp (view)->dispatcher server check view resolver -> to jsp
+view resolver 
+handler mapping url to controller mapping
+model(set only data) vs modelandview(set both model and view )
+set dispatcherservlet in web.xml by set contextconfiglocation (spring boot use autoconfiguration for dispachservlet)
+
+
+form backing object 
+@valid
+java validation api - hibernate validate 
+bindingresult - result of the validation will be stored here 
+bindingresult.hasErrors
+form tags are 
+==============
+form:errors
+form:label
+form:input
+form:form
+
+
+form variable 
+==============
+@pathvariable
+
+session
+===========
+@modelattribute
+it will be invoked before @requestmapping
+@sessionattribute("sample")
+model with key sample will be stored in session 
+
+@initbinder
+
+
+@controleradvice->implement common logic for controllers
+
+@exceptionhandler
+
+
+
+advantage of clear separation of concers
+m vc and dispachservlet 
+
+
+springboot
+================
+auto configuration --By whatever class available in classpath -spring-boot-autoconfigure.jar19671
+non fucntional features like monitoring 
+embeded server 
+
+@springbootconfiguration
+@enableautoconfiguration
+@componentscan
+
+
+
+
+
